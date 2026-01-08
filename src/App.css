@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.loyout-header {
+  height: 70px;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+.titlt-layout {
+  font-size: 20px;
+  font-weight: bold;
+}
+.user-layout {
+  font-size: 18px;
+  font-weight: bold;
+}
+.logo-header {
+  width: 63px;
+  height: 50px;
+  border-radius: 50%;
+}
+.profile-header {
+  width: 50px;
+  height: 52px;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+.search-header {
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 6px;
+  font-size: 16px;
+}
+.main-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.home-page-container {
+  padding: 5px;
+}
+
+.dashboard-header {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+
+.header-icon {
+  color: black;
+}
+
+.main-cards-row {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-change {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stat-title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.stat-value {
+  margin: 8px 0;
+}
+
+.stat-description {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.secondary-row {
+  margin-bottom: 24px;
+}
+
+.metrics-card {
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.metric-item {
+  border-radius: 6px;
+  background: #f8fafc;
+  transition: background-color 0.2s ease;
+}
+
+.metric-item:hover {
+  background: #f1f5f9;
+}
+
+.metric-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.metric-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: rgba(99, 102, 241, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-info {
+  flex: 1;
+}
+
+.metric-value {
+  margin: 4px 0;
+}
+
+.metric-extra {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.customer-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.customer-segment {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quick-stats-row {
+  margin-top: 24px;
+}
+
+.quick-stat {
+  border-radius: 5px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.quick-stat .ant-card-body {
+  padding: 16px;
+}
+
+.quick-stat .ant-typography-secondary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.quick-stat .ant-typography {
+  color: white;
+}
+
+.last-updated {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .home-page-container {
+    padding: 8px;
+  }
+
+  .stat-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .dashboard-title {
+    font-size: 18px;
+  }
+}
